@@ -1,0 +1,25 @@
+Python
+SQL
+TensorFlow
+PyTorch
+Machine Learning
+Deep Learning
+Docker
+AWS
+Azure
+Git
+GitHub
+FastAPI
+Flask
+Pandas
+NumPy
+OpenCV
+Scikit-learn
+Keras
+NLP
+Transformers
+Linux
+CI/CD
+MongoDB
+PostgreSQL
+Redis
