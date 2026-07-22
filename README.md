@@ -2,7 +2,7 @@
 
 <p align="center">
 
-![image alt]()
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/747c60f707976e37e8ab0a72b6ee9fd1a2a0ecc0/assets/TalentLens%20AI.png)
 
 </p>
 
