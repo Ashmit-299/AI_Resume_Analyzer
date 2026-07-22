@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Compare Candidates</title>
+
+<style>
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+th,td{
+
+border:1px solid #ddd;
+
+padding:15px;
+
+text-align:center;
+
+}
+
+th{
+
+background:#2563eb;
+
+color:white;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>
+
+Candidate Comparison
+
+</h1>
+
+<table>
+
+<tr>
+
+<th>Metric</th>
+
+{% for report in reports %}
+
+<th>
+
+{{ report.candidate_name }}
+
+</th>
+
+{% endfor %}
+
+</tr>
+
+<tr>
+
+<td>
+
+Overall
+
+</td>
+
+{% for report in reports %}
+
+<td>
+
+{{ report.overall_score }}%
+
+</td>
+
+{% endfor %}
+
+</tr>
+
+<tr>
+
+<td>
+
+ATS
+
+</td>
+
+{% for report in reports %}
+
+<td>
+
+{{ report.ats_score }}%
+
+</td>
+
+{% endfor %}
+
+</tr>
+
+<tr>
+
+<td>
+
+Semantic
+
+</td>
+
+{% for report in reports %}
+
+<td>
+
+{{ report.semantic_score }}%
+
+</td>
+
+{% endfor %}
+
+</tr>
+
+<tr>
+
+<td>
+
+Required Skills
+
+</td>
+
+{% for report in reports %}
+
+<td>
+
+{{ report.required_skill_score }}%
+
+</td>
+
+{% endfor %}
+
+</tr>
+
+</table>
+
+</body>
+
+</html>

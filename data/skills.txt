@@ -1,25 +1,216 @@
 Python
+Java
+C++
+C#
+JavaScript
+TypeScript
+Go
+Rust
+Ruby
+PHP
+Swift
+Kotlin
 SQL
+HTML
+CSS
+React
+Angular
+Vue.js
+Node.js
+Django
+Flask
+FastAPI
+Spring Boot
+ASP.NET
+Express.js
+Ruby on Rails
 TensorFlow
 PyTorch
-Machine Learning
-Deep Learning
-Docker
-AWS
-Azure
-Git
-GitHub
-FastAPI
-Flask
+Keras
+Scikit-learn
 Pandas
 NumPy
+Matplotlib
+Seaborn
 OpenCV
-Scikit-learn
-Keras
-NLP
+SpaCy
+NLTK
 Transformers
-Linux
+BERT
+GPT
+LLMs
+RAG
+LangChain
+Hugging Face
+Machine Learning
+Deep Learning
+Natural Language Processing
+Computer Vision
+Reinforcement Learning
+Generative AI
+Data Science
+Data Analysis
+Data Engineering
+Data Visualization
+Statistical Analysis
+A/B Testing
+R
+MATLAB
+SAS
+Tableau
+Power BI
+Looker
+Apache Spark
+Apache Kafka
+Apache Airflow
+ETL
+Data Warehousing
+Data Modeling
+Big Data
+Hadoop
+Hive
+Redshift
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud Platform
+GCP
+Docker
+Kubernetes
+Terraform
+Ansible
+Jenkins
+GitHub Actions
 CI/CD
+Linux
+Nginx
+Apache
+Shell Scripting
+Bash
+PowerShell
+Git
+GitHub
+GitLab
+Bitbucket
+Jira
+Confluence
+Agile
+Scrum
+Kanban
+REST API
+GraphQL
+gRPC
+Microservices
+RabbitMQ
+Redis
 MongoDB
 PostgreSQL
-Redis
+MySQL
+SQLite
+Elasticsearch
+DynamoDB
+Cassandra
+Firebase
+Supabase
+Cybersecurity
+Network Security
+Penetration Testing
+SIEM
+Splunk
+Wireshark
+OAuth
+JWT
+SSL/TLS
+Machine Learning Operations
+MLOps
+Model Deployment
+Docker Compose
+Prometheus
+Grafana
+ELK Stack
+Terraform
+CloudFormation
+Serverless
+AWS Lambda
+Azure Functions
+Google Cloud Functions
+HTML5
+CSS3
+Sass
+Less
+Tailwind CSS
+Bootstrap
+Material UI
+Figma
+Adobe XD
+Photoshop
+Illustrator
+UI/UX Design
+User Research
+Wireframing
+Prototyping
+Accessibility
+SEO
+Google Analytics
+Marketing Automation
+HubSpot
+Salesforce
+Zapier
+Slack
+Microsoft Office
+Excel
+PowerPoint
+Word
+Google Sheets
+Google Docs
+Notion
+Airtable
+Trello
+Asana
+Monday.com
+Leadership
+Communication
+Teamwork
+Problem Solving
+Critical Thinking
+Time Management
+Project Management
+Product Management
+Scrum Master
+Business Analysis
+Requirements Gathering
+Stakeholder Management
+Technical Writing
+Presentation Skills
+Mentoring
+Coaching
+Cross-functional Collaboration
+Innovation
+Adaptability
+Attention to Detail
+Analytical Thinking
+Decision Making
+Conflict Resolution
+Emotional Intelligence
+Public Speaking
+Negotiation
+Budget Management
+Risk Management
+Quality Assurance
+Testing
+Unit Testing
+Integration Testing
+End-to-End Testing
+Selenium
+Pytest
+Jest
+Cypress
+Postman
+API Testing
+Performance Testing
+Load Testing
+Security Testing
+DevOps
+SRE
+Platform Engineering

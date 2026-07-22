@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TalentLens AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <h2>TalentLens AI</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="/dashboard" class="sidebar-link active">Dashboard</a>
+            <a href="/history" class="sidebar-link">Reports</a>
+            <a href="/history" class="sidebar-link">History</a>
+            <a href="/logout" class="sidebar-link">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+
+        <div class="dashboard-header">
+            <h1>Welcome, {{ user.name }}</h1>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h2>{{ total_reports }}</h2>
+                <p>Total Reports</p>
+            </div>
+            <div class="stat-card">
+                <h2>{{ avg_match }}%</h2>
+                <p>Average Match</p>
+            </div>
+            <div class="stat-card">
+                <h2>{{ highest_match }}%</h2>
+                <p>Highest Match</p>
+            </div>
+            <div class="stat-card">
+                <h2>{{ avg_ats }}%</h2>
+                <p>Average ATS</p>
+            </div>
+        </div>
+
+        <!-- Upload Card -->
+        <div class="upload-card">
+            <h2>Analyze New Resume</h2>
+            <form method="POST" enctype="multipart/form-data" action="/analyze">
+                <input type="file" name="resume" required>
+                <textarea
+                    name="job_description"
+                    placeholder="Paste Job Description..."
+                    rows="10"
+                    required>
+                </textarea>
+                <button type="submit">Analyze Resume</button>
+            </form>
+        </div>
+
+        <!-- Recent Reports Table -->
+        <div class="reports-section">
+            <h2>Recent Reports</h2>
+            <table class="reports-table">
+                <thead>
+                    <tr>
+                        <th>Resume</th>
+                        <th>Overall</th>
+                        <th>ATS</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for report in reports %}
+                    <tr>
+                        <td>{{ report.resume_name }}</td>
+                        <td>{{ report.overall_score }}%</td>
+                        <td>{{ report.ats_score }}%</td>
+                        <td>{{ report.created_at.strftime('%d %b %Y') }}</td>
+                        <td>
+                            <a href="/report/{{ report._id }}">View</a>
+                            <a href="/download/{{ report._id }}">PDF</a>
+                            <button onclick="confirmDelete('{{ report._id }}')">Delete</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+</div>
+
+<!-- Loading Overlay -->
+<div id="loading" class="loading-overlay" style="display:none;">
+    <div class="spinner"></div>
+    <h2>AI is analyzing your resume...</h2>
+</div>
+
+<script>
+document.querySelector("form").addEventListener("submit", () => {
+    document.getElementById("loading").style.display = "flex";
+});
+
+function confirmDelete(id) {
+    if (confirm("Delete this report?")) {
+        window.location = "/delete/" + id;
+    }
+}
+</script>
+
+</body>
+</html>

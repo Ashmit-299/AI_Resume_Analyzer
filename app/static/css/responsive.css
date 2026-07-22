@@ -1,0 +1,5 @@
+@media(max-width:1000px){
+    .workspace-grid{
+        grid-template-columns:1fr;
+    }
+}

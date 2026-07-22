@@ -1,0 +1,3 @@
+class ResumeAnalysisException(Exception):
+
+    pass

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TalentLens AI | Login</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            min-height:100vh;
+
+            background:linear-gradient(135deg,#0F172A,#1E293B,#2563EB);
+
+        }
+
+        .login-card{
+
+            width:420px;
+
+            padding:40px;
+
+            border-radius:20px;
+
+            background:rgba(255,255,255,.08);
+
+            backdrop-filter:blur(18px);
+
+            border:1px solid rgba(255,255,255,.15);
+
+            text-align:center;
+
+            color:white;
+
+            box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+        }
+
+        .login-card img{
+
+            width:90px;
+
+            margin-bottom:20px;
+
+        }
+
+        h1{
+
+            margin-bottom:10px;
+
+            font-size:34px;
+
+        }
+
+        p{
+
+            opacity:.8;
+
+            margin-bottom:35px;
+
+            line-height:24px;
+
+        }
+
+        .google-btn{
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            gap:12px;
+
+            text-decoration:none;
+
+            background:white;
+
+            color:#111827;
+
+            padding:15px;
+
+            border-radius:12px;
+
+            font-weight:bold;
+
+            transition:.3s;
+
+        }
+
+        .google-btn:hover{
+
+            transform:translateY(-4px);
+
+            box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+        }
+
+        .google-btn img{
+
+            width:24px;
+
+            margin:0;
+
+        }
+
+        .footer{
+
+            margin-top:35px;
+
+            font-size:14px;
+
+            opacity:.7;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="login-card">
+
+    <img src="/static/images/logo.png">
+
+    <h1>TalentLens AI</h1>
+
+    <p>
+
+        AI Recruitment Assistant
+
+        <br>
+
+        Login securely using your Google account.
+
+    </p>
+
+    <a href="/auth/google" class="google-btn">
+
+        <img src="https://developers.google.com/identity/images/g-logo.png">
+
+        Continue with Google
+
+    </a>
+
+    <div class="footer">
+
+        © 2026 Ashmit Pandey
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

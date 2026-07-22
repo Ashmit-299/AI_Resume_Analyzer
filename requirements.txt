@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pymupdf
+sentence-transformers
+python-multipart
+reportlab
+pymongo 
+python-dotenv
+authlib 
+httpx 
+itsdangerous

@@ -1,0 +1,38 @@
+.footer{
+    margin-top:120px;
+    padding:70px 40px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.02);
+}
+
+.footer h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.footer p{
+    color:#A1A1AA;
+    max-width:700px;
+    margin:15px auto;
+    line-height:1.8;
+}
+
+.footer-stack{
+    margin-top:30px;
+    color:#60A5FA;
+    font-weight:600;
+}
+
+.footer-divider{
+    width:120px;
+    height:1px;
+    background:rgba(255,255,255,.15);
+    margin:40px auto;
+}
+
+.copyright{
+    font-size:14px;
+    color:#71717A;
+    letter-spacing:1px;
+}

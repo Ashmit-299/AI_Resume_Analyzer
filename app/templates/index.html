@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Recruitment Assistant</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+
+    <div class="user-profile">
+
+        {% if user.picture %}
+            <img
+                src="{{ user.picture }}"
+                class="profile-img"
+                alt="Profile">
+        {% else %}
+            <div class="profile-fallback" style="display:flex;">
+                {{ user.name[0]|upper }}
+            </div>
+        {% endif %}
+
+        <div class="profile-text">
+            <h3>Welcome Back, {{ user.name }}</h3>
+            <small>{{ user.email }}</small>
+        </div>
+
+    </div>
+
+    <ul>
+
+        <li><a href="#hero">Home</a></li>
+
+        <li><a href="#upload">Analyze</a></li>
+
+        <li><a href="#results">Results</a></li>
+
+        <li><a href="#about">About</a></li>
+
+    </ul>
+
+    <button
+        id="get-started-btn"
+        class="nav-btn"
+    >
+
+        Get Started
+
+    </button>
+
+    </nav>
+
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <section
+    class="hero"
+    id="hero"
+>
+
+        <p class="badge">
+            AI Powered Recruitment Platform
+        </p>
+
+        <h1>
+            Hire Smarter.<br>
+            Screen Faster.
+        </h1>
+
+        <p class="subtitle">
+
+            Analyze resumes using semantic AI,
+            ATS scoring, skill-gap detection,
+            and intelligent recommendations.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#upload">
+
+                <button class="primary-btn">
+
+                    Start Analysis
+
+                </button>
+
+            </a>
+            <button
+                id="learn-more-btn"
+                class="secondary-btn"
+            >
+
+                Learn More
+
+            </button>
+
+        </div>
+
+        <div class="scroll-indicator">
+
+            ↓ Scroll to Begin
+
+        </div>
+
+    </section>
+
+    <section id="upload" class="workspace">
+
+    <h2>Resume Intelligence Workspace</h2>
+
+    <p class="workspace-subtitle">
+
+        Upload a resume, provide a job description, and let AI evaluate
+        candidate compatibility using semantic understanding.
+
+    </p>
+
+    <div class="workspace-grid">
+
+        <!-- Resume Upload -->
+
+        <div class="glass-card upload-card">
+
+            <div class="upload-header">
+
+                <div class="upload-icon">
+
+                    📄
+
+                </div>
+
+                <div>
+
+                    <h3>Resume</h3>
+
+                    <p>Upload PDF Resume</p>
+
+                </div>
+
+            </div>
+
+            <div id="drop-zone" class="drop-zone">
+
+                <div class="drop-icon">
+
+                    ☁️
+
+                </div>
+
+                <h4>
+
+                    Drag & Drop Resume
+
+                </h4>
+
+                <p>
+
+                    or click to browse
+
+                </p>
+
+                <span>
+
+                    PDF • Maximum 5 MB
+
+                </span>
+
+                <input
+                    type="file"
+                    id="resume"
+                    accept=".pdf"
+                    hidden
+                >
+
+            </div>
+
+            <div
+                id="file-preview"
+                class="file-preview"
+            >
+
+            </div>
+
+        </div>
+
+        <!-- Job Description -->
+
+        <div class="glass-card jd-card">
+
+            <div class="upload-header">
+
+                <div class="upload-icon">
+
+                    💼
+
+                </div>
+
+                <div>
+
+                    <h3>Job Description</h3>
+
+                    <p>Paste complete Job Description</p>
+
+                </div>
+
+            </div>
+
+            <textarea
+                id="job-description"
+                rows="16"
+                placeholder="Paste Job Description here..."
+            ></textarea>
+
+            <div class="character-count">
+
+                0 / 5000
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="analyze-container">
+
+        <button
+            id="analyze-btn"
+            class="analyze-btn"
+        >
+
+            ✨ Analyze Candidate
+
+        </button>
+
+    </div>
+
+<section
+    id="processing"
+    class="processing-section hidden"
+>
+
+        <h2>
+
+            AI Processing
+
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-step">
+
+                <div class="circle"></div>
+
+                <span>Resume Parsing</span>
+
+            </div>
+
+            <div class="timeline-step">
+
+                <div class="circle"></div>
+
+                <span>Skill Extraction</span>
+
+            </div>
+
+            <div class="timeline-step">
+
+                <div class="circle"></div>
+
+                <span>Semantic Matching</span>
+
+            </div>
+
+            <div class="timeline-step">
+
+                <div class="circle"></div>
+
+                <span>ATS Evaluation</span>
+
+            </div>
+
+            <div class="timeline-step">
+
+                <div class="circle"></div>
+
+                <span>Generating Report</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<section
+    id="results"
+    class="results-section"
+>
+
+    <h2>
+
+        Candidate Analysis
+
+    </h2>
+
+    <div
+        id="dashboard"
+        class="dashboard"
+    >
+
+    </div>
+
+    <div class="download-section">
+
+        <button id="download-report-btn">
+
+            📄 Download PDF Report
+
+        </button>
+
+    </div>
+
+</section>
+
+<section id="about" class="about-section">
+
+    <div class="section-title">
+
+        <span class="section-badge">
+
+            WHY TALENTLENS AI
+
+        </span>
+
+        <h2>
+
+            Built for Modern Recruitment
+
+        </h2>
+
+        <p>
+
+            AI-powered recruitment platform that combines semantic understanding,
+            ATS optimization, and intelligent skill-gap analysis to help recruiters
+            make faster and smarter hiring decisions.
+
+        </p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                🧠
+
+            </div>
+
+            <h3>Semantic AI</h3>
+
+            <p>
+
+                Uses transformer embeddings to compare resumes with job descriptions.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                📊
+
+            </div>
+
+            <h3>ATS Analysis</h3>
+
+            <p>
+
+                Evaluates resume structure and ATS compatibility.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                🎯
+
+            </div>
+
+            <h3>Skill Gap Detection</h3>
+
+            <p>
+
+                Finds missing skills required for the target role.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                ⚡
+
+            </div>
+
+            <h3>Instant Analysis</h3>
+
+            <p>
+
+                Generates AI-powered candidate insights in seconds.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="tech-stack">
+
+        <h2>
+
+            Technology Stack
+
+        </h2>
+
+        <div class="tech-list">
+
+            <span>Python</span>
+
+            <span>FastAPI</span>
+
+            <span>Sentence Transformers</span>
+
+            <span>HTML5</span>
+
+            <span>CSS3</span>
+
+            <span>JavaScript</span>
+
+            <span>PyMuPDF</span>
+
+            <span>Scikit-Learn</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <h2>
+
+        TalentLens AI
+
+    </h2>
+
+    <p>
+
+        AI Recruitment Assistant powered by Artificial Intelligence,
+        Semantic Search, ATS Analysis and Machine Learning.
+
+    </p>
+
+    <div class="footer-stack">
+
+        FastAPI • Python • Sentence Transformers • JavaScript • HTML • CSS
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="copyright">
+
+        &copy; 2026 Ashmit Pandey. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+</section>
+
+<script src="/static/js/upload.js"></script>
+<script src="/static/js/animation.js"></script>
+<script src="/static/js/api.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+
+</html>

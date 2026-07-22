@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>History</title>
+
+</head>
+
+<body>
+
+<h1>
+
+{{ user.name }}'s Reports
+
+</h1>
+
+<hr>
+
+<form action="/compare" method="post">
+
+{% for report in reports %}
+
+<div style="padding:20px;margin-bottom:20px;border:1px solid #ddd;">
+
+<input
+
+type="checkbox"
+
+name="report_ids"
+
+value="{{ report._id }}">
+
+<h2>
+
+{{ report.resume_name }}
+
+</h2>
+
+<p>
+
+Overall Match :
+
+{{ report.overall_score }}%
+
+</p>
+
+<p>
+
+Semantic :
+
+{{ report.semantic_score }}%
+
+</p>
+
+<p>
+
+Required Skills :
+
+{{ report.required_skill_score }}%
+
+</p>
+
+<p>
+
+ATS :
+
+{{ report.ats_score }}%
+
+</p>
+
+<p>
+
+{{ report.created_at }}
+
+</p>
+
+<a href="/report/{{ report._id }}">
+
+    <button>
+
+        View Report
+
+    </button>
+
+</a>
+
+</div>
+
+{% endfor %}
+
+<button type="submit">
+
+Compare Selected
+
+</button>
+
+</form>
+
+</body>
+
+</html>
