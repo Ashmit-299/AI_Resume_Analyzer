@@ -8,8 +8,8 @@ itsdangerous==2.2.0
 pymongo==4.13.2
 dnspython==2.7.0
 sentence-transformers==5.0.0
-transformers==4.53.3
-torch==2.7.1
+transformers==4.56.0
+torch==2.8.0
 scikit-learn==1.7.1
 numpy==2.3.1
 scipy==1.16.0
