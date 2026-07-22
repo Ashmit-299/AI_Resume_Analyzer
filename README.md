@@ -120,37 +120,49 @@ PDF Report
 
 ## Login Page
 
-![image alt]()
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/Login%20Page.png)
 
 ---
 
 ## Landing Page
 
-![image alt]()
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/Landing%20Page.png)
 
 ---
 
 ## Resume Upload
 
-![image alt]()
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/Resume%20Upload.png)
 
 ---
 
 ## AI Processing
 
-![image alt]()
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/AI%20Processing.png)
 
 ---
 
 ## Analysis Result
 
-![image alt]()
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/Analysis%20Result%20-%201.png)
+
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/Analysis%20Result%20-%202.png)
+
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/Analysis%20Result%20-%203.png)
 
 ---
 
 ## Final Report
 
-![image alt]()
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/Final%20Report%20-%201.png)
+
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/Final%20Report%20-%202.png)
+
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/Final%20Report%20-%203.png)
+
+## About
+
+![image alt](https://github.com/Ashmit-299/AI_Resume_Analyzer/blob/e1f1ac30f0e7009bd5c672ee1eeb37eb3773e0e2/assets/About.png)
 
 ---
 
