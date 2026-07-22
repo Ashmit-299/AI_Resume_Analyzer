@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img src="screenshots/logo.png" width="180">
+![image alt]()
 
 </p>
 
@@ -120,49 +120,37 @@ PDF Report
 
 ## Login Page
 
-![Login](screenshots/login.png)
+![image alt]()
 
 ---
 
 ## Landing Page
 
-![Landing](screenshots/home.png)
+![image alt]()
 
 ---
 
 ## Resume Upload
 
-![Upload](screenshots/upload.png)
+![image alt]()
 
 ---
 
 ## AI Processing
 
-![Processing](screenshots/processing.png)
+![image alt]()
 
 ---
 
 ## Analysis Result
 
-![Results](screenshots/results.png)
+![image alt]()
 
 ---
 
-## Dashboard
+## Final Report
 
-![Dashboard](screenshots/dashboard.png)
-
----
-
-## History
-
-![History](screenshots/history.png)
-
----
-
-## Candidate Comparison
-
-![Compare](screenshots/compare.png)
+![image alt]()
 
 ---
 
@@ -242,7 +230,7 @@ TalentLens-AI
 Clone repository
 
 ```bash
-git clone https://github.com/yourusername/TalentLens-AI.git
+git clone https://github.com/Ashmit-299/AI_Resume_Analyzer.git
 ```
 
 Go inside project
@@ -399,19 +387,19 @@ Artificial Intelligence & Machine Learning Engineer
 GitHub
 
 ```
-https://github.com/YOUR_USERNAME
+https://github.com/Ashmit-299
 ```
 
 LinkedIn
 
 ```
-https://linkedin.com/in/YOUR_PROFILE
+www.linkedin.com/in/ashmit299
 ```
 
 Email
 
 ```
-YOUR_EMAIL
+pandeyashmit299@gmail.com
 ```
 
 ---
